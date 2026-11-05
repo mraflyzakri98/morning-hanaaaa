@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffe0ed">
+<title>Good Morning, My Love 💗</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700;800&family=Pacifico&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Quicksand',sans-serif;background:linear-gradient(135deg,#ffe0ed,#fff0f5,#ffc6dc);min-height:100vh;display:flex;align-items:center;justify-content:center;overflow-x:hidden;color:#75445b;padding:20px}
+.heart{position:fixed;bottom:-30px;color:#ff80ab;font-size:20px;animation:float 7s linear forwards;opacity:.7;pointer-events:none;z-index:1}
+@keyframes float{0%{transform:translateY(0) rotate(0);opacity:0}20%{opacity:.8}100%{transform:translateY(-110vh) rotate(360deg);opacity:0}}
+.container{width:100%;max-width:440px;background:rgba(255,255,255,.9);border:2px solid white;border-radius:30px;padding:26px 23px;text-align:center;box-shadow:0 15px 45px rgba(218,105,148,.2);position:relative;z-index:2}
+.progress{width:100%;height:8px;background:#ffe0ec;border-radius:20px;margin-bottom:25px;overflow:hidden}
+.progress-bar{height:100%;width:20%;background:linear-gradient(90deg,#ff80ab,#f06292);border-radius:20px;transition:.4s}
+.stage{display:none;animation:appear .5s ease}.stage.active{display:block}
+@keyframes appear{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+.emoji{font-size:62px;margin-bottom:12px}
+h1{font-family:'Pacifico',cursive;color:#e85d91;font-size:29px;margin-bottom:13px;line-height:1.5}
+h2{color:#e85d91;font-size:21px;margin-bottom:14px}
+p{font-size:14px;line-height:1.9;margin-bottom:14px;color:#80576b}
+.highlight{background:#fff0f5;border-radius:18px;padding:15px;margin:17px 0;font-size:14px;line-height:1.8}
+button{border:0;padding:13px 22px;border-radius:30px;background:linear-gradient(135deg,#ff80ab,#ec407a);color:white;font-family:inherit;font-weight:800;font-size:14px;cursor:pointer;margin:8px 3px 0;box-shadow:0 5px 15px rgba(236,64,122,.22);transition:.2s}
+button:hover{transform:translateY(-3px) scale(1.02)}button:active{transform:scale(.96)}
+.secondary{background:#ffe0ec;color:#d94d82;box-shadow:none}
+.photo{width:100%;max-height:320px;object-fit:cover;border-radius:20px;margin:14px 0;border:5px solid #ffe0ec;box-shadow:0 8px 20px #e9a4bd55}
+.photo-opening{
+  display:block;width:170px;height:170px;max-width:65vw;max-height:65vw;
+  object-fit:cover;object-position:center;border-radius:50%;
+  margin:8px auto 20px;padding:5px;
+  border:3px solid #f48fb1;
+  outline:5px solid #ffe0ec;outline-offset:4px;
+  box-shadow:0 8px 22px rgba(218,105,148,.28);
+}
+@media(max-width:380px){.photo-opening{width:145px;height:145px}}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700;800&family=Pacifico&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+.mission{text-align:left;background:#fff1f6;padding:15px;border-radius:18px;margin:15px 0}
+.mission label{display:block;margin:12px 0;font-size:14px;cursor:pointer}
+.mission input{accent-color:#ec407a;margin-right:8px}
+.final-message{font-family:'Pacifico',cursive;font-size:22px;color:#e85d91;line-height:1.8;margin:20px 0}
+#surprise{display:none;animation:appear .7s ease;margin-top:18px}
+.small{font-size:11px;color:#c47c98;margin-top:22px;line-height:1.7}
+@media(max-width:380px){.container{padding:22px 17px}h1{font-size:25px}}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="progress"><div class="progress-bar" id="progress"></div></div>
+
+  <section class="stage active">
+    <img src="foto-keren.jpeg" class="photo-opening" alt="Foto kami berdua"><h1>Good Morning!</h1>
+    <h2>Selamat Pagi, Sayangku 💗</h2>
+    <p>Eitss... sebelum memulai hari ini, ada seseorang yang ingin menyampaikan sesuatu kepadamu.</p>
+    <div class="highlight">Seseorang yang mungkin ganteng agak menyebalkan, ngebosenin, tetapi selalu ingin melihat kamu bahagia. Hehehe. namanya afyy.</div>
+    <p>Sudah siap menerima pesan spesial pagi ini?</p>
+    <button onclick="nextStage()">Buka Pesannya 💌</button>
+  </section>
+
+  <section class="stage">
+    <div class="emoji">🐻</div>
+    <h2>HALLO HANA PERTIWI!</h2>
+    <p>Selamat pagi manusia paling lucu sekaligus paling pagi bangunnya. kalo difikir-fikir ini emg doa abang lohh punya pasangan bangun pagi </p>
+    <div class="highlight">🚨 JADWAL PAGI INI 🚨<br><br>1. Anterin abang pulang<br>2. ketempat koko ambil gaji😭<br>3. ke kampus jumpa bapack muzammil<br>4. kepenyengat<br>TERAKHIR PULANGG </div>
+    <p>Ayo bangun, dari kasur. biar bisa bangun masa depan dengan abanggg xixxii.</p>
+    <button onclick="nextStage()">Lanjut, Syg! 💕</button>
+    <button class="secondary" onclick="alert('KETAHUAN! Masih mau tidur ya? WKWK 😂')">5 menit lagi 😴</button>
+  </section>
+
+  <section class="stage">
+    <img src="rapli-hana.jpeg" class="photo opening" alt="rapli-hana">
+    <p>Sayang, aku cuma mau mengingatkan satu hal kecil pagi ini.🥹💕</p>
+    <div class="highlight">Kamu itu hebat, kamu berharga, dan kamu sudah berusaha sejauh ini. Jadi jangan terlalu keras sama diri sendiri, ya. Tidak semua hal harus sempurna. maaf juga untuk beberapa hari ini yang membosankan yaa sayangg. abangg sayangg adekk kok cuman abang gatau cara bilangnyaaa hehehe</div>
+    <p>Kalau hari ini terasa melelahkan, jangan lupa bahwa kamu tidak harus menghadapi semuanya sendirian. ajak aku yang masi pengangguran ini hehehe</p>
+    <button onclick="nextStage()">Aku Mau Semangat! 🥰</button>
+  </section>
+
+  <section class="stage">
+    <div class="emoji">☕</div>
+    <h2>Morning Mission!</h2>
+    <p>Sebelum melanjutkan aktivitas, selesaikan misi pagi ini dahulu!</p>
+    <div class="mission">
+      <label><input type="checkbox"> 🌸 Bangun dari kasur</label>
+      <label><input type="checkbox"> 🥰 telfon abang, bangunin abang</label>
+      <label><input type="checkbox"> 🍞 Jangan lupa sarapan</label>
+      <label><input type="checkbox"> 💧 Minum air putih</label>
+      <label><input type="checkbox"> 😊 Senyum dulu hari ini</label>
+    </div>
+    <p>Ingat! Jangan sampai lupa makan. Aku tidak menerima laporan pacar kelaparan. 😤</p>
+    <button onclick="nextStage()">Aduh Cantiknya Klo senyum! 🎀</button>
+  </section>
+
+  <section class="stage">
+    <div class="emoji">💖</div>
+    <h1>One Last Thing...</h1>
+    <p>Sebelum kamu pergi menjalani hari, ada satu pesan terakhir dari aku.</p>
+    <div class="final-message">"Have a lovely day,<br>My favorite person!"</div>
+    <p>Semoga hari ini banyak hal baik datang kepadamu. Semoga semua urusanmu lancar, langkahmu dimudahkan, dan senyummu tidak hilang sepanjang hari.</p>
+    <p>Jangan lupa jaga kesehatan, jangan lupa makan, dan jangan lupa kalau ada aku yang selalu mendukungmu.</p>
+    <button onclick="showSurprise()">Klik untuk kejutan terakhir 💗</button>
+    <div id="surprise">
+      <div class="emoji">🥹💕</div>
+      <h2>I LOVE YOU!</h2>
+      <p>Terima kasih sudah hadir dan menjadi bagian indah dalam hidupku. Semangat menjalani hari ini, sayang!</p>
+      <div class="final-message">You're my favorite notification. ❤️</div>
+      <p>Sending you 1000 virtual hugs! 🤗</p>
+    </div>
+  </section>
+
+  <div class="small">Made with love, just for you 💗<br>From someone who loves annoying you.</div>
+</div>
+
+<script>
+let currentStage=0;
+const stages=document.querySelectorAll('.stage');
+const progress=document.getElementById('progress');
+
+function nextStage(){
+  if(currentStage<stages.length-1){
+    stages[currentStage].classList.remove('active');
+    currentStage++;
+    stages[currentStage].classList.add('active');
+    progress.style.width=((currentStage+1)/stages.length*100)+'%';
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+}
+function showSurprise(){
+  document.getElementById('surprise').style.display='block';
+  createHearts();
+}
+function createHearts(){
+  for(let i=0;i<35;i++){
+    setTimeout(()=>{
+      const heart=document.createElement('div');
+      heart.className='heart';
+      heart.textContent=['💗','💕','💖','🌸','❤️'][Math.floor(Math.random()*5)];
+      heart.style.left=Math.random()*100+'vw';
+      heart.style.animationDuration=(4+Math.random()*4)+'s';
+      document.body.appendChild(heart);
+      setTimeout(()=>heart.remove(),8000);
+    },i*100);
+  }
+}
+setInterval(()=>{
+  const heart=document.createElement('div');
+  heart.className='heart';
+  heart.textContent=['♡','💗','💕','🌸'][Math.floor(Math.random()*4)];
+  heart.style.left=Math.random()*100+'vw';
+  heart.style.animationDuration=(5+Math.random()*4)+'s';
+  document.body.appendChild(heart);
+  setTimeout(()=>heart.remove(),9000);
+},900);
+</script>
+</body>
+</html>
